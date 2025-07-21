@@ -1,0 +1,84 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Operation Promise: Elite Taskforce</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #000000, #1a1a1a);
+      color: #ffd700;
+      overflow: hidden;
+    }
+    .hangar {
+      height: 100vh;
+      background: url('https://i.imgur.com/OxD7I6Z.jpg') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .assistant {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .button {
+      background-color: #ffd700;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border-radius: 10px;
+      color: #000;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .button:hover {
+      background-color: #ffcc00;
+      transform: scale(1.05);
+    }
+    .quote {
+      position: absolute;
+      bottom: 10px;
+      font-style: italic;
+      font-size: 1rem;
+      color: #aaa;
+      text-align: center;
+      width: 100%;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="hangar">
+    <div class="assistant">Welcome, Commander <strong>P. ENIAYEKAN</strong>. All systems are standing by.</div>
+    <div class="buttons">
+      <button class="button" onclick="setMission()">🎯 Set Mission</button>
+      <button class="button" onclick="translateThreat()">🌐 Translate Threat</button>
+      <button class="button" onclick="intelDrop()">📱 Intel Drop</button>
+    </div>
+  </div>
+  <div class="quote">
+    “Command the moment. Greatness isn’t given. It’s seized.” — Ghost
+  </div>  <script>
+    function setMission() {
+      alert("🕓 Opening Schedule + Alarm Systems...");
+    }
+    function translateThreat() {
+      alert("🔊 Activating Translator Mode...");
+    }
+    function intelDrop() {
+      alert("📡 Fetching Social Intel & AI Assistant Tools...");
+    }
+  </script></body>
+</html>
